@@ -15,10 +15,44 @@ ul {
         color: #02d871;
         content: "";
         top: 2px;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: normal;
         font-family: $font-family-icon;
       }
     }
 }  
 
+ul.servicios__margen li {
+  margin-bottom: 15px;
+}
+
+h5.servicios__title {
+  font-weight: 800;
+  font-family: $font-family-primary;
+  a {
+    color: #7c60d5;
+  }
+  a:focus, a:hover {
+    color: #33e2a0;
+    text-decoration: none !important;
+  }
+}
+
+
+ul.fa-ul.li__servicios{
+
+  margin-left: 0;
+}
+
+
+i.icon__servicios {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  color: #ffffff;
+  background: #7c60d5;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 100%;
+}

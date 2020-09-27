@@ -15,6 +15,8 @@ h1, h2 {
 
 
 
+
+
 section#index {
     margin-top: 80px;
 }
@@ -37,23 +39,21 @@ div {
 }
 
 
-    i.icon__servicios {
-        font-size: 1.5rem;
-        padding-bottom: 20px;
-        color: #ffffff;
-        background: #7c60d5;
-        line-height: 60px;
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        border-radius: 100%;
-    }
 
 
-    ul.fa-ul.li__servicios{
+/* Lista - Soluciones */
 
-        margin-left: 0;
-    }
+ul.listing-mark li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+
+
+
 
 
 /* Contacto */
@@ -109,14 +109,17 @@ section#contacto {
     margin-bottom: 20px;
 }
 
-.image__contacto {
-    width: 100%;
-}
 
 .solutions {
     margin-top: 30px;
 }
 
-
+div {
+    .perfil__margen {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    }
+}
 
 
