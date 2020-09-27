@@ -1,6 +1,4 @@
 section#servicios {
-    text-align: center;
-
     .servicios__descripcion {
         padding-bottom: 10px;
     }
@@ -11,8 +9,16 @@ section#servicios {
 
 }
 
-
-
-
-
+ul {
+  li {
+      i {
+        color: #02d871;
+        content: "";
+        top: 2px;
+        font-size: 20px;
+        font-weight: normal;
+        font-family: $font-family-icon;
+      }
+    }
+}  
 
