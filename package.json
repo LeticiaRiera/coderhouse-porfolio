@@ -2,7 +2,7 @@
   "author": "Leticia Riera leticiariera22@gmail.com",
   "description": "Descripcion de mi Package",
   "license": "MIT",
-  "name": "sass",
+  "name": "scss",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "build:css": "npm run css && npm run css-autoprefixer",
