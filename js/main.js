@@ -72,7 +72,7 @@ let listaPresupuestos = [];
 listaPresupuestos.push(new Presupuesto (DATOS[0]));
 
 
-    // let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - E-commerce - Blog - Web a medida" );
+    let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - E-commerce - Blog - Web a medida" );
     // let entradaPaginas = prompt("¿Cuántas páginas tiene su web? \n 5 - 10 - 100");
     // let entradaDiseno = prompt("Que tipo de diseño tendrá? \n Plantilla - A medida - No necesito diseño");
 
@@ -85,7 +85,7 @@ for (let presupuesto of listaPresupuestos){
     let precioPresupuesto = document.createElement("h4");
    
     presupuesto.sumarPrecio(400);
-    precioPresupuesto.innerHTML = "<b>Presupuesto para web tipo: </b> " + presupuesto.tipoWeb + "<br> <b>Precio:</b> $" + presupuesto.precio;
+    precioPresupuesto.innerHTML = "<b>Presupuesto para web tipo: </b> " + entradaWeb + "<br> <b>Precio:</b> $" + presupuesto.precio;
     contenedorPadre.appendChild(precioPresupuesto);
 
     
