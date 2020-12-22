@@ -4,7 +4,7 @@ let primeraPregunta = document.getElementById("preguntaUno");
 primeraPregunta.firstElementChild.innerHTML = "¿Qué tipo de web quiere hacer?"
 
 
-//AGREGAMOS EL NOMBRE DEL PRODUCTO, EN CASO DE CAMBIAR NOMBRE DE ALGUNO HACERLO DESDE ACÁ
+// //AGREGAMOS EL NOMBRE DEL PRODUCTO, EN CASO DE CAMBIAR NOMBRE DE ALGUNO HACERLO DESDE ACÁ
 let primerProducto = document.getElementById("productoUno");
 primerProducto.firstElementChild.innerHTML = "Institucional"
 
@@ -60,53 +60,50 @@ class Presupuesto {
         this.precio = parseFloat(datos.precio);
     }
 
+    //ESTO LO VOY A USAR PARA SUMAR EL IVA 
     sumarPrecio(agregado){
         this.precio += agregado;
     }
 
 }
 
+    let listaPresupuestos = [];
 
-
-let listaPresupuestos = [];
-listaPresupuestos.push(new Presupuesto (DATOS[0]));
-
-
-    let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - E-commerce - Blog - Web a medida" );
+    let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - Blog  - E-commerce - Web a medida" );
     // let entradaPaginas = prompt("¿Cuántas páginas tiene su web? \n 5 - 10 - 100");
     // let entradaDiseno = prompt("Que tipo de diseño tendrá? \n Plantilla - A medida - No necesito diseño");
 
+    if (entradaWeb === "Institucional"){
+        listaPresupuestos.push(new Presupuesto (DATOS[0]));
+        localStorage.setItem("Producto 1", listaPresupuestos[0].id);
+        sessionStorage.setItem("Producto 1", listaPresupuestos[0].precio);
+        console.log(listaPresupuestos);
+    } 
+    else if (entradaWeb === "Blog"){
+        listaPresupuestos.push(new Presupuesto (DATOS[1]));
+        localStorage.setItem("Producto 1", listaPresupuestos[0].id);
+        sessionStorage.setItem("Producto 1", listaPresupuestos[0].precio);
+        console.log(listaPresupuestos);
+    } 
+    else if (entradaWeb === "E-commerce"){
+        listaPresupuestos.push(new Presupuesto (DATOS[2]));
+        localStorage.setItem("Producto 1", listaPresupuestos[0].id);
+        sessionStorage.setItem("Producto 1", listaPresupuestos[0].precio);
+        console.log(listaPresupuestos);
+    } 
+    else (entradaWeb === "Web a medida");{
+        listaPresupuestos.push(new Presupuesto (DATOS[3]));
+        localStorage.setItem("Producto 1", listaPresupuestos[0].id);
+        sessionStorage.setItem("Producto 1", listaPresupuestos[0].precio);
+        console.log(listaPresupuestos);
+    }
 
 
-let contenedorPadre = document.getElementById("resultadoPrecio");
-
-for (let presupuesto of listaPresupuestos){
+    let contenedorPadre = document.getElementById("resultadoPrecio");
+        
+        
 
     let precioPresupuesto = document.createElement("h4");
-   
-    presupuesto.sumarPrecio(400);
-    precioPresupuesto.innerHTML = "<b>Presupuesto para web tipo: </b> " + entradaWeb + "<br> <b>Precio:</b> $" + presupuesto.precio;
+    // presupuesto.sumarPrecio(400); ACÁ VOY A PASAR EL IVA
+    precioPresupuesto.innerHTML = "<b>Presupuesto para web tipo: </b> " + entradaWeb + "<br> <b>Precio:</b> $" + listaPresupuestos[0].precio;
     contenedorPadre.appendChild(precioPresupuesto);
-
-    
-}
-
-
- 
-
-
-
-// FUNCIÓN PARA CREAR UN NUEVO PRESUPUESTO, TOMA LOS DATOS QUE INGRESA EL USUARIO
-// function nuevoPresupuesto() {
-
-//     let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - E-commerce - Blog - Web a medida" );
-//     let entradaPaginas = prompt("¿Cuántas páginas tiene su web? \n 5 - 10 - 100");
-//     let entradaDiseno = prompt("Que tipo de diseño tendrá? \n Plantilla - A medida - No necesito diseño");
-
-//     return new Presupuesto (entradaWeb, entradaPaginas, entradaDiseno);
-
-    
-// }
-
-
-
