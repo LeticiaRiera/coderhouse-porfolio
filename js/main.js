@@ -107,3 +107,21 @@ class Presupuesto {
     // presupuesto.sumarPrecio(400); ACÁ VOY A PASAR EL IVA
     precioPresupuesto.innerHTML = "<b>Presupuesto para web tipo: </b> " + entradaWeb + "<br> <b>Precio:</b> $" + listaPresupuestos[0].precio;
     contenedorPadre.appendChild(precioPresupuesto);
+
+
+
+    document.getElementById("btnEnviar").onclick = datosEnviados
+
+    function datosEnviados(evento){
+        let padre = document.getElementById("contacto")
+
+        console.log(padre.children [0].value);
+        console.log(padre.children [1].value);
+        console.log(padre.children [2].value);
+        console.log(padre.children [3].value);
+
+        alert('Gracias por escribirnos!')
+
+    }
+
+ 
