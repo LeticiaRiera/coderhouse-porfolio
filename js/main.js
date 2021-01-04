@@ -36,7 +36,7 @@ class Presupuesto {
 
     let listaPresupuestos = [];
 
-    // let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - Blog  - E-commerce - Web a medida" );
+    let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - Blog  - E-commerce - Web a medida" );
     // let entradaPaginas = prompt("¿Cuántas páginas tiene su web? \n 5 - 10 - 100");
     // let entradaDiseno = prompt("Que tipo de diseño tendrá? \n Plantilla - A medida - No necesito diseño");
 

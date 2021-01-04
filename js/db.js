@@ -28,4 +28,4 @@ const DATOS = [{
     "precio": 70000,
 }];
 
-let DATOSPRESUPUESTO [];
+let DATOSPRESUPUESTO = [];
