@@ -101,11 +101,6 @@
                 </div>
               </div>
             </div>
-
-            <div id="resultadoPrecio">
-
-            </div>
-
           </div>
         </div>    
     </section>
@@ -121,13 +116,39 @@
         <p class="mb-12 text-center">Por útlimo te solicitamos tus datos personales para ponernos en contacto.
         </p>
 
-        <div id="contacto" class="mb-3 col-12">
-          <input type="text" class="form-control col-12 mb-3" placeholder="Nombre">
-          <input type="text" class="form-control col-12 mb-3"  placeholder="Apellido">
-          <input type="tel"class="form-control col-12 mb-3"   placeholder="Teléfono">
-          <input type="email" class="form-control col-12 mb-3"   placeholder="Email">
-          <button id="btnEnviar" class="btn btn-primary mb-">Enviar</button>
+        <div id="contactoCotizar" class="mb-3 col-12">
+          <form id="formCotizar">
+            <input type="text"    class="form-control col-12 mb-3"  placeholder="Nombre" required>
+            <input type="text"    class="form-control col-12 mb-3"  placeholder="Apellido" required>
+            <input type="number"  class="form-control col-12 mb-3"  placeholder="Teléfono" required>
+            <input type="email"   class="form-control col-12 mb-3"  placeholder="Email" required>
+            <button id="btnEnviar" class="btn btn-primary mb-">Enviar</button>
+            <!-- <input type="submit" value="Enviar"> -->
+          </form>
         </div>
+
+        <div class="container">
+          <div class="row">
+            <h2>Resumen presupuesto</h2>
+            <table id="detallePresupuesto">
+              <tbody>
+                <tr class="col-12">
+                  <th class="col-2" scope="col">Tipo de web</th>
+                  <th class="col-2" scope="col">Precio</th>
+                  <th class="col-2" scope="col">Nombre</th>
+                  <th class="col-2" scope="col">Apellido</th>
+                  <th class="col-2" scope="col">Teléfono</th>
+                  <th class="col-2" scope="col">Email</th>
+                </tr>
+              </tbody>
+            </table>  
+
+            <div id="resultadoPrecio">
+
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>

@@ -36,7 +36,7 @@ class Presupuesto {
 
     let listaPresupuestos = [];
 
-    let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - Blog  - E-commerce - Web a medida" );
+    // let entradaWeb = prompt("¿Qué tipo de web quiere hacer? \n  Institucional - Blog  - E-commerce - Web a medida" );
     // let entradaPaginas = prompt("¿Cuántas páginas tiene su web? \n 5 - 10 - 100");
     // let entradaDiseno = prompt("Que tipo de diseño tendrá? \n Plantilla - A medida - No necesito diseño");
 
@@ -91,4 +91,40 @@ class Presupuesto {
 
     }
 
- 
+
+$("#formCotizar").submit(function (infoEvento) { 
+    infoEvento.preventDefault();
+
+    let inputs = $("#formCotizar : input");
+
+    let nuevoPresupuesto = {
+        "nombre"    : inputs[0].value,
+        "apellido"  : inputs[1].value,
+        "teléfono"  : inputs[2].value,
+        "email"     : inputs[3].value,
+    }
+
+    DATOSPRESUPUESTO.push(nuevoPresupuesto);
+
+    $("#resultadoPrecio").prepend(`<h6>salida ${nuevoPresupuesto.nombre}</h6>`);
+
+    $("#detallePresupuesto tbody").append(`<tr>
+                                            <th>Acá va tipo web</th>
+                                            <th>Acá va precio</th>
+                                            <th>${nuevoPresupuesto.nombre}</th>
+                                            <th>${nuevoPresupuesto.apellido}</th>
+                                            <th>${nuevoPresupuesto.teléfono}</th>
+                                            <th>${nuevoPresupuesto.email}</th>
+    </tr>`)
+    
+    
+    
+    
+    // con esto vamos a sumar el total del presupuesto    
+    // let valorTotal = 0;
+    // for (const cotizacion of DATOSPRESUPUESTO) {
+    //     valorTotal += cotizacion.precio;
+    // }
+
+    // console.log("Total a pagar "+valorTotal);
+});
