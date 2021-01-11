@@ -44,45 +44,44 @@
             </div>
         </nav>
     </header>
-
-    <section id="bienvenida"  class="solutions marginTop__Cotizar">
-        <div class="container mt-4">
-          <div class="row no-gutters flex-row-reverse mt-4">
-            <div class="col-lg-12 align-self-center mt-4">
-              <h2 class="mb-12 text-center mt-4">Cotizá tu web</h2>
-              <p class="mb-12 text-center">En este cotizador online podés realizar un presupuesto aproximado para crear tu página web.<br>¡Completa las preguntas para obtener un presupuesto web al instante!
-              </p>
-              <p class="col-md-12 text-center"><a href="#cotizar" class="btn-redondeado btn-lila">Comenzar presupuesto »</a></p>
+<body>
+    <div class="container" style="margin-top: 100px;">
+        <div class="row d-flex">
+            <div class="col-12">
+                  <h2>Datos de contacto</h2>
             </div>
-          </div>
+            <div class="col-12">
+                <form id="formCotizar">
+                    <input type="text"   placeholder="Nombre"    required>
+                    <input type="text"   placeholder="Apellido"    required>
+                    <input type="number" placeholder="Teléfono"  required>
+                    <input type="email"   placeholder="Email"    required>
+                    <button>ENVIAR</button>
+                 </form>
+                 <hr>
+                 <table id="datosContacto">
+                   <caption>Datos de contacto</caption>
+                   <tbody>
+                     <tr>
+                       <th scope="col">Nombre</th>
+                       <th scope="col">Apellido</th>
+                       <th scope="col">Teléfono</th>
+                       <th scope="col">Email</th>
+                     </tr>
+                   </tbody>
+                 </table>
+                 <hr>
+                 <div id="contenidoGenerado">
+             
+                 </div>
+            </div>
+
         </div>
-    </section>
-
-    <section id="preguntas" class="marginTop__Cotizar">
-      <div class="container">
-        <div class="row">
+    </div>
 
 
-          <div id="preguntaUno" class="mb-4">
-            <h2 class="col-12 text-center">¿Qué tipo de web estás buscando?</h2>
-          </div>
-          
-          <div id="preguntaDos">
-            <h2 class="col-12 text-center">¿Qué diseño necesitas?</h2>
-            
-          </div>
-
-          <div id="resumen" class="marginBottom__Cotizar col-md-12">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-<script src="js/jquery-3.5.1.js"></script>
-<script src="js/db.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/db-eventos.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/eventos.js"></script>
 </body>
 </html>

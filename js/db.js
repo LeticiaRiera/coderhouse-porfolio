@@ -1,31 +1,54 @@
-const DATOS = [{
+const TIPOWEB = [{
     "id": 1,
-    "tipoWeb": "Institucional",
-    "paginas": 5,
-    "diseno": "Plantilla",
-    "precio": 20000,
+    "web"   : "Institucional",
+    "precio"    : "2000",
+    "avatar"    : "http://leticiariera.com.ar/images/institucional.png"
 },
 {
     "id": 2,
-    "tipoWeb": "Blog",
-    "paginas": 100,
-    "diseno": "A medida",
-    "precio": 60000,
+    "web": "Blog",
+    "precio": 6000,
+    "avatar"    : "http://leticiariera.com.ar/images/blog.png"
 
 },
 {
     "id": 3,
-    "tipoWeb": "E-commerce",
-    "paginas": 1000,
-    "diseno": "Plantilla",
-    "precio": 100000,
+    "web": "E-commerce",
+    "precio": 10000,
+    "avatar"    : "http://leticiariera.com.ar/images/tinda-online.png"
 },
 {
     "id": 4,
-    "tipoWeb": "Web a medida",
-    "paginas": 10,
-    "diseno": "A medida",
-    "precio": 70000,
+    "web": "Web a medida",
+    "precio": 7000,
+    "avatar"    : "http://leticiariera.com.ar/images/a-medida.png"
 }];
 
-let DATOSPRESUPUESTO = [];
+const DISENO = [{
+    "id" : 1,
+    "tipoDiseno" : "A medida",
+    "precio": 10000,
+    "avatar"    : "http://leticiariera.com.ar/images/institucional.png"
+},
+{
+    "id": 2,
+    "tipoDiseno": "Usar plantilla",
+    "precio": 6000,
+    "avatar"    : "http://leticiariera.com.ar/images/blog.png"
+
+},
+{
+    "id": 3,
+    "tipoDiseno": "No necesito diseño",
+    "precio": 10000,
+    "avatar"    : "http://leticiariera.com.ar/images/tinda-online.png"
+},
+{
+    "id": 4,
+    "tipoDiseno": "No lo defini",
+    "precio": 7000,
+    "avatar"    : "http://leticiariera.com.ar/images/a-medida.png"
+}
+
+]
+

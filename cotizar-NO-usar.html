@@ -45,8 +45,8 @@
         </nav>
     </header>
 
-    <section id="bienvenida"  class="solutions marginTop__Cotizar">
-        <div class="container mt-4">
+    <section id="index"  class="solutions">
+        <div class="container">
           <div class="row no-gutters flex-row-reverse mt-4">
             <div class="col-lg-12 align-self-center mt-4">
               <h2 class="mb-12 text-center mt-4">Cotizá tu web</h2>
@@ -58,27 +58,96 @@
         </div>
     </section>
 
-    <section id="preguntas" class="marginTop__Cotizar">
-      <div class="container">
-        <div class="row">
+    <section id="pregunta-1" class="porfolios">
+        <div class="container">
+          <div class="row">
+            <div id="preguntaUno" class="col-12 d-flex justify-content-center mt-4">
+              <h3>Primera pregunta</h3>
+            </div>
 
 
-          <div id="preguntaUno" class="mb-4">
-            <h2 class="col-12 text-center">¿Qué tipo de web estás buscando?</h2>
+            <div class="col-md-3">
+              <div class="project text-center">
+                <img class="img__tiposweb" src="images/institucional.png" alt=""></a>
+                  <div id="productoUno">
+                    <h5>Producto 1</h5>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="project text-center">
+                <a href="#"><img class="img__tiposweb" src="images/blog.png" alt=""></a>
+                    <div id="productoDos">
+                      <h5>Producto 2</h5>
+                    </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="project text-center">
+                <a href="#"><img class="img__tiposweb" src="images/tinda-online.png" alt=""></a>
+                <div id="productoTres">
+                  <h5>Producto 3</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="project text-center">
+                <a href="#"><img class="img__tiposweb" src="images/a-medida.png" alt=""></a>
+                <div id="productoCuatro">
+                  <h5>Producto 4</h5>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <div id="preguntaDos">
-            <h2 class="col-12 text-center">¿Qué diseño necesitas?</h2>
-            
-          </div>
-
-          <div id="resumen" class="marginBottom__Cotizar col-md-12">
-
-          </div>
-        </div>
-      </div>
+        </div>    
     </section>
 
+<!-- ÉSTA SERÍA LA ÚLTIMA PANTALLA QUE SE CARGARÍA, AL MAIL DEBERÍA LLEGAR UN RESUMEN DEL PRESUPUESTO Y LOS DATOS DE CONTACTO -->
+
+
+<section class="solutions">
+  <div class="container">
+    <div class="row no-gutters flex-row-reverse mt-4">
+      <div class="col-lg-12 align-self-center mt-4">
+        <h2 class="mb-12 text-center mt-4">Datos de contacto</h2>
+        <p class="mb-12 text-center">Por útlimo te solicitamos tus datos personales para ponernos en contacto.
+        </p>
+
+        <form id="formCotizar">
+          <input type="text"   placeholder="Nombre"    required>
+          <input type="text"   placeholder="Apellido"    required>
+          <input type="number" placeholder="Teléfono"  required>
+          <input type="email"   placeholder="Email"    required>
+          <button>ENVIAR</button>
+       </form>
+       <hr>
+       <table id="miTabla">
+         <caption>Datos de contacto</caption>
+         <tbody>
+           <tr>
+             <th scope="col">Nombre</th>
+             <th scope="col">Apellido</th>
+             <th scope="col">Teléfono</th>
+             <th scope="col">Email</th>
+           </tr>
+         </tbody>
+       </table>
+       <hr>
+       <div id="contenidoGenerado">
+   
+       </div>
+       <div id="resultadoPrecio">
+   
+      </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <script src="js/jquery-3.5.1.js"></script>
