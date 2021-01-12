@@ -1,5 +1,19 @@
 // SIMULADOR PARA REALIZAR PRESUPUESTOS DE PÁGINAS WEB. Al hacer clic en una imagen (pregunta 1) muestra las siguiente 
 
+// const TIPOWEB = "data/web.json";
+
+$.getJSON("data/web.json", (respuesta)=> {
+    let dato = respuesta;
+    console.log(respuesta);
+}
+);
+
+$.get("presupuesto.html", function (data, status){
+    console.log(data);
+    console.log(status);
+})
+
+
 $("#resumen").hide();
 
 for (let index = 0; index < TIPOWEB.length; index+=4){
