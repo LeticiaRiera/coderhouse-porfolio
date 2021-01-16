@@ -1,4 +1,23 @@
-{"id":1,"web":"Institucional","precio":"2000","avatar":"http://leticiariera.com.ar/images/institucional.png"}
-{"id":2,"web":"Blog","precio":6000,"avatar":"http://eticiariera.com.ar/images/blog.png"}
-{"id":3,"web":"E-commerce","precio":10000,"avatar":"http://leticiariera.com.ar/images/tinda-online.png"}
-{"id":4,"web":"Web a medida","precio":7000,"avatar":"http://leticiariera.com.ar/images/a-medida.png"}
+[{
+    "id":1,"web":"Institucional",    
+    "precio":"2000",    
+    "avatar":"http://leticiariera.com.ar/images/institucional.png"    
+    },    
+    {    
+    "id":2,    
+    "web":"Blog",    
+    "precio":6000,    
+    "avatar":"http://leticiariera.com.ar/images/blog.png"    
+    },    
+    {    
+    "id":3,    
+    "web":"E-commerce",    
+    "precio":10000,    
+    "avatar":"http://leticiariera.com.ar/images/tinda-online.png"    
+    },    
+    {    
+    "id":4,    
+    "web":"Web a medida",    
+    "precio":7000,    
+    "avatar":"http://leticiariera.com.ar/images/a-medida.png"
+    }]
