@@ -45,35 +45,91 @@
         </nav>
     </header>
 
-    <section id="bienvenida"  class="solutions marginTop__Cotizar">
+    <section id="bienvenida"  class="solutions marginTop__Cotizar bgimage">
         <div class="container mt-4">
           <div class="row no-gutters flex-row-reverse mt-4">
             <div class="col-lg-12 align-self-center mt-4">
               <h2 class="mb-12 text-center mt-4">Cotizá tu web</h2>
               <p class="mb-12 text-center">En este cotizador online podés realizar un presupuesto aproximado para crear tu página web.<br>¡Completa las preguntas para obtener un presupuesto web al instante!
               </p>
-              <p class="col-md-12 text-center"><a href="#cotizar" class="btn-redondeado btn-lila">Comenzar presupuesto »</a></p>
+              <p class="col-md-12 text-center"><a href="#preguntas" class="btn-redondeado btn-lila">Comenzar presupuesto »</a></p>
             </div>
           </div>
         </div>
     </section>
 
-    <section id="preguntas" class="marginTop__Cotizar">
+    <section id="preguntas" class=" marginBottom__Cotizar">
       <div class="container">
         <div class="row">
+          <div class="col col-md-10 mr-md-auto ml-md-auto" >
+            <div id="contenido">
+                    <h1 class="text-center header_cotizar">Cotiza tu sitio web</h1>
+                <div class="row contenido-formulario">
+                    <div class="col col-md-10 mr-md-auto ml-md-auto">
+                    <form action="#" id="cotizar-web">
+                            <div class="form-group">
+                                <label for="marca">Tipo de web:</label>
+                                <select class="form-control" id="tipoWeb">
+                                    <option value="">- Seleccionar -</option>
+                                    <option value="1">Institucional</option>
+                                    <option value="2">Blog</option>
+                                    <option value="3">E-commerce</option>
+                                    <option value="4">Web a medida</option>
+                                </select>
+                            </div>
+                        <div class="form-group">
+                            <label for="cantPaginas">Páginas:</label>
+                            <select class="form-control" id="cantPaginas">
+                            </select>
+                        </div>
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <legend class="col-form-legend col-12">Tipo diseño</legend>
+                                <div class="col12">
+                                    <div class="form-check float-left mr-4">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="diseno" value="Plantilla" checked>
+                                            Plantilla
+                                        </label>
+                                    </div>
+                                    <div class="form-check float-left mr-4">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="diseno" value="A medida">
+                                            A medida
+                                        </label>
+                                    </div>
+                                    <div class="form-check float-left">
+                                        <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="diseno" value="Ya tengo">
+                                        Ya tengo diseño
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                          <label for="metPago">Metodo de pago en la web:</label>
+                          <select class="form-control" id="metPago">
+                          </select>
+                        </div>
 
+                        <div class="form-group">
+                          <label for="regisUser">Login o registro de usuarios:</label>
+                          <select class="form-control" id="regisUser">
+                          </select>
+                        </div>
 
-          <div id="preguntaUno" class="mb-4 col-12 text-center">
-            <h2 class="col-12 text-center">¿Qué tipo de web estás buscando?</h2>
-          </div>
-          
-          <!-- <div id="preguntaDos">
-            <h2 class="col-12 text-center">¿Qué diseño necesitas?</h2>
-            
-          </div> -->
-
-          <div id="resumen" class="marginBottom__Cotizar col-md-12">
-
+                        <div id="cargando">
+                            <img src="images/unnamed.gif">
+                        </div>
+                        <div id="resultado"></div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-raised btn-primary">Cotizar</button>
+                        </div>
+                    </form> 
+                    </div>
+                </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -82,7 +138,7 @@
 
 
 <script src="js/jquery-3.5.1.js"></script>
-<!-- <script src="js/db.js"></script> -->
+<script src="js/db.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
